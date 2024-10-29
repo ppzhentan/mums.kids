@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mums.kids - Coming Soon!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ffcad4 0%, #fff0f3 100%);
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 90%;
+        }
+
+        .logo {
+            font-size: 2.5em;
+            color: #ff6b95;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .coming-soon {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 30px;
+            animation: bounce 2s infinite;
+        }
+
+        .description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .toys {
+            font-size: 3em;
+            margin: 20px 0;
+        }
+
+        .toys span {
+            display: inline-block;
+            animation: float 3s infinite;
+            margin: 0 10px;
+        }
+
+        .toys span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .toys span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-15px) rotate(5deg);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 2em;
+            }
+            .coming-soon {
+                font-size: 1.5em;
+            }
+            .toys {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">Mums.kids</div>
+        <h1 class="coming-soon">まもなくオープン!</h1>
+        <p class="description">
+            楽しさと温もりに満ちた子供向け商品の世界を<br>
+            丹精込めて作り上げています。<br>
+            ママの心強い味方として、お子様に<br>
+            喜びと驚きをお届けします。<br>
+            乞うご期待！
+        </p>
+        <div class="toys">
+            <span>🎨</span>
+            <span>🧸</span>
+            <span>🎮</span>
+        </div>
+    </div>
+</body>
+</html>
